@@ -1,0 +1,19 @@
+services:
+  mysql:
+    image: mysql:8.4
+    ports:
+      - "3307:3306"
+    environment:
+      MYSQL_DATABASE: 20262M_prj5_condominio_financeiro
+      MYSQL_USER: financeiro
+      MYSQL_PASSWORD: financeiro_dev
+      MYSQL_ROOT_PASSWORD: root_dev
+    volumes:
+      - financeiro_data:/var/lib/mysql
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost"]
+      interval: 5s
+      timeout: 5s
+      retries: 20
+volumes:
+  financeiro_data:

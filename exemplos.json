@@ -1,0 +1,36 @@
+{
+  "cobrancas": {
+    "imovelId": 1,
+    "descricao": "Taxa condominial",
+    "competencia": "2026-10-01",
+    "valor": 500,
+    "vencimento": "2026-10-10",
+    "situacao": "PENDENTE"
+  },
+  "boletos": {
+    "cobrancaId": 1,
+    "codigoBarras": "DEMONSTRACAO-001",
+    "linhaDigitavel": "DEMO-001",
+    "urlPdf": "https://example.com/boleto.pdf"
+  },
+  "pagamentos": {
+    "cobrancaId": 1,
+    "valorPago": 500,
+    "dataPagamento": "2026-10-06T12:00:00.000Z",
+    "formaPagamento": "PIX",
+    "observacao": "Pagamento de demonstração"
+  },
+  "receitas": {
+    "descricao": "Aluguel do salão",
+    "valor": 200,
+    "data": "2026-10-06",
+    "categoria": "SALAO"
+  },
+  "despesas": {
+    "descricao": "Limpeza",
+    "fornecedor": "Empresa de limpeza",
+    "valor": 150,
+    "data": "2026-10-06",
+    "categoria": "MANUTENCAO"
+  }
+}
